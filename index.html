@@ -2,6 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"> </script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 p {
@@ -38,39 +39,12 @@ h4{
 </style>
 </head>
 <body>
+  <h1>First Anniversary Celebration</h1>
+  <img src="./9.gif" width="33%">
+  <img src="./6.gif" width="29%">
+  <img src="./9.gif" width="33%">
 
-    <p id="demo"></p>
 
-    <script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("dec 8, 2023 24:00:00").getTime();
-    
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-    
-      // Get today's date and time
-      var now = new Date().getTime();
-        
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
-        
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-      // Output the result in an element with id="demo"
-      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
-        
-      // If the count down is over, write some text 
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-      }
-    }, 1000);
-    </script>
 <button onclick="window.print()">Print this page For Status</button>
 <audio controls autoplay>
   <source src="Tumhe Bolna Pasand Hai(PagalWorld.com.se).mp3" type="audio/mpeg">
